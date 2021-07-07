@@ -3,12 +3,10 @@ import pandas as pd
 from os import getenv
 
 
-def load_to_aws(path_csv: str):
+def load_to_aws(df: pd.DataFrame):
     path = getenv("S3PATH")
     database = getenv("DATABASE")
     table = getenv("TABLE")
-
-    df = pd.read_csv(path_csv)
 
     if database not in wr.catalog.databases().values:
         wr.catalog.create_database(database)
