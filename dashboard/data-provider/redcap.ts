@@ -3,7 +3,7 @@ import parse from "csv-parser"
 import { Disease } from "../interfaces";
 import { finished } from "stream/promises";
 
-const redcapCsvPath = process.env.CSV_PATH;
+const redcapCsvPath = "../data.csv" ?? process.env.CSV_PATH;
 
 const readCsvRedcap = async (path: string) => {
     const records: Disease[] = []
