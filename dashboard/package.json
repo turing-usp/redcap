@@ -10,8 +10,10 @@
   "dependencies": {
     "csv-parser": "^3.0.0",
     "next": "latest",
+    "plotly.js": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-plotly.js": "^2.5.1",
     "recharts": "^2.0.9",
     "styled-components": "^5.3.0"
   },
